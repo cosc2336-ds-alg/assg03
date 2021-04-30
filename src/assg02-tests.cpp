@@ -227,6 +227,13 @@ TEST_CASE_METHOD(LargeIntegerTestFixture,
 {
   SECTION("")
   {
+    // append the digits from previous test case again
+    li2.appendDigit(7);
+    li3.appendDigit(9);
+    li5.appendDigit(1);
+    li6.appendDigit(7);
+
+    // now perform the tests of the add operator
     LargeInteger lires;
     
     lires = li1.add(li2);
