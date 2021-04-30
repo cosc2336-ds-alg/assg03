@@ -1,7 +1,7 @@
 ---
-name: 'Task 4: Implement `digitAtPlace()` Member Function'
+name: 'Task 4: Implement `digitAtPosition()` Member Function'
 about: Task 4 for Students
-title: 'Task 4: Implement `digitAtPlace()` Member Function'
+title: 'Task 4: Implement `digitAtPosition()` Member Function'
 labels: enhancement
 assignees: ''
 
@@ -9,7 +9,7 @@ assignees: ''
 
 **Description**
 
-The purpose of `digitAtPlace()` is to index into the `LargeInteger` and return the digit at a particular location (digit place) of the instance.
+The purpose of `digitAtPosition()` is to index into the `LargeInteger` and return the digit at a particular location (digit place) of the instance.
 
 
 **Suggested Solution**

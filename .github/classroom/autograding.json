@@ -41,9 +41,9 @@
       "points": 10
     },
     {
-      "name": "test task4digitAtPlace",
+      "name": "test task4digitAtPosition",
       "setup": "make",
-      "run": "./test --list-test-names-only [task4digitAtPlace] | grep . && ./test [task4digitAtPlace]",
+      "run": "./test --list-test-names-only [task4digitAtPosition] | grep . && ./test [task4digitAtPosition]",
       "input": "",
       "output": "",
       "comparison": "included",

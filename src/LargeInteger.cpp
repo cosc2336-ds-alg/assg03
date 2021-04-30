@@ -136,8 +136,8 @@ LargeInteger::~LargeInteger()
 // your implementation of the maxDigits() member function should go here
 
 
-/** LargeInteger digit at index
- * Given an index, return the digit at the given index of
+/** LargeInteger digit at position
+ * Given a position, return the digit at the given index of
  * this LargeInteger.  The digitIndex passed in refers to
  * the place or power of the digit needed.  For example
  * 0 means we want the 10^0 or the 1's place, 1 means we
@@ -148,13 +148,13 @@ LargeInteger::~LargeInteger()
  * 4th place (10^4 or the 1000s place), this function will
  * return 0.
  *
- * @param digitIndex The index, interpreted as the place or power,
+ * @param position The index, interpreted as the place or power,
  *   of the specific digit to be accessed and returned.
  *
- * @returns int The digit in the 10^digitIndex of this
+ * @returns int The digit in the 10^position place of this
  *   LargeInteger object.
  */
-// your implementation of the digitAtPlace() member function should go here
+// your implementation of the digitAtPosition() member function should go here
 
 
 /** LargeInteger append digit

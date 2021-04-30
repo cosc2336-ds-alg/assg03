@@ -137,47 +137,47 @@ TEST_CASE_METHOD(LargeIntegerTestFixture,
  */
 
 
-/** test digitAtPlace() member function
+/** test digitAtPosition() member function
  * Uncomment the following test case block and write your code to pass
  * the tests.
  */
-/* uncomment this test case to work on implementation of digitAtPlace()
+/* uncomment this test case to work on implementation of digitAtPosition()
  * member function
 TEST_CASE_METHOD(LargeIntegerTestFixture,
-		 "<digitAtPlace()> member function tests (reading values)", "[task4digitAtPlace]")
+		 "<digitAtPosition()> member function tests (reading values)", "[task4digitAtPosition]")
 {
-  SECTION("test of digitAtPlace() member function")
+  SECTION("test of digitAtPosition() member function")
   {
     // test single digit access working
-    CHECK( li1.digitAtPlace(0) == 0 );
-    CHECK( li2.digitAtPlace(0) == 5 );
+    CHECK( li1.digitAtPosition(0) == 0 );
+    CHECK( li2.digitAtPosition(0) == 5 );
     
     // check begin and end bounds
-    CHECK( li3.digitAtPlace(0) == 7 );
-    CHECK( li3.digitAtPlace(4) == 3 );
-    CHECK( li5.digitAtPlace(0) == 2 );
-    CHECK( li5.digitAtPlace(8) == 3 );
-    CHECK( li6.digitAtPlace(0) == 3 );
-    CHECK( li6.digitAtPlace(16) == 6 );
+    CHECK( li3.digitAtPosition(0) == 7 );
+    CHECK( li3.digitAtPosition(4) == 3 );
+    CHECK( li5.digitAtPosition(0) == 2 );
+    CHECK( li5.digitAtPosition(8) == 3 );
+    CHECK( li6.digitAtPosition(0) == 3 );
+    CHECK( li6.digitAtPosition(16) == 6 );
     
     // check some aribitrary values not at ends
-    CHECK( li3.digitAtPlace(2) == 5 );
-    CHECK( li4.digitAtPlace(1) == 8 );
-    CHECK( li5.digitAtPlace(6) == 8 );
-    CHECK( li5.digitAtPlace(2) == 3 );
-    CHECK( li6.digitAtPlace(4) == 2 );
-    CHECK( li6.digitAtPlace(14) == 9 );
+    CHECK( li3.digitAtPosition(2) == 5 );
+    CHECK( li4.digitAtPosition(1) == 8 );
+    CHECK( li5.digitAtPosition(6) == 8 );
+    CHECK( li5.digitAtPosition(2) == 3 );
+    CHECK( li6.digitAtPosition(4) == 2 );
+    CHECK( li6.digitAtPosition(14) == 9 );
     
     // according to specifications, illegal indexes should give a 0 as the digit at place
-    CHECK( li1.digitAtPlace(-1) == 0 );
-    CHECK( li2.digitAtPlace(-5) == 0 );
-    CHECK( li4.digitAtPlace(-7) == 0 );
-    CHECK( li1.digitAtPlace(1) == 0 );
-    CHECK( li2.digitAtPlace(5) == 0 );
-    CHECK( li3.digitAtPlace(6) == 0 );
-    CHECK( li4.digitAtPlace(6) == 0 );
-    CHECK( li5.digitAtPlace(15) == 0 );
-    CHECK( li6.digitAtPlace(17) == 0 );
+    CHECK( li1.digitAtPosition(-1) == 0 );
+    CHECK( li2.digitAtPosition(-5) == 0 );
+    CHECK( li4.digitAtPosition(-7) == 0 );
+    CHECK( li1.digitAtPosition(1) == 0 );
+    CHECK( li2.digitAtPosition(5) == 0 );
+    CHECK( li3.digitAtPosition(6) == 0 );
+    CHECK( li4.digitAtPosition(6) == 0 );
+    CHECK( li5.digitAtPosition(15) == 0 );
+    CHECK( li6.digitAtPosition(17) == 0 );
   }
 }
  */
