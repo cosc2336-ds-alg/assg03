@@ -95,7 +95,7 @@ in the `LargeInteger.hpp` header file you were given that gives the
 declarations of this class, you will notice that `digit` is defined
 as:
 
-```
+```c++
   /// @brief digits A dynamically allocated array of integers.  This array
   ///   holds the digits of the large integer this object represents.  The
   ///   digits in the array are ordered such that the 1's place (10^0) is in
@@ -115,7 +115,7 @@ in reverse of their display order.  That is to say that the 1's place
 1, etc.  So to be clear, if we are representing the integer value
 $487$ in our `LargeInteger`, we should end up with
 
-```
+```c++
 digit[0] = 7 // The ones place  10^0 has a 7's digit
 digit[1] = 8 // The 10's place  10^1 has an 8's digit
 digit[2] = 4 // The 100's place 10^2 has a 4's digit
@@ -161,7 +161,7 @@ a member function in the implementation file, something like this:
 
 
 ```c++
-string LargeInteger::tostring()
+string LargeInteger::tostring() const
 {
   return ""
 }
