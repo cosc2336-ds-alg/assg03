@@ -298,15 +298,15 @@ first 3 test cases, do the usual to create and push a commit, update
 the pull request, merge in the changes and close the third issue
 covering this task.
 
-## Task 4: Implement `digitAtPlace()` Member Function
+## Task 4: Implement `digitAtPosition()` Member Function
 
 Perform the usual prerequisite steps before starting task 4.
 
-We will also need the `digitAtPlace()` member function in our 
+We will also need the `digitAtPosition()` member function in our 
 implementation of the `add()` operator, which is what we are working
 towards with this project.
 
-The `digitAtPlace()` member function simply returns the digit
+The `digitAtPosition()` member function simply returns the digit
 at the indicated position.  For example if our `LargeInteger`
 object contains the digits for the number `376`, which would
 be represented in the `digit` array as:
@@ -318,7 +318,7 @@ digit[2] = 3  // the 10^2 or 100's digit
 ```
 
 we could ask this function for example "what is the
-digit at place 2 (the 10^2 digit)" and it should
+digit at position 2 (the 10^2 digit)" and it should
 return an answer of `3` because we have 3 100's
 in the $10^2$ place.
 
@@ -341,15 +341,15 @@ no digit at index 3, this is beyond the bounds of the `digit[]` array.
 
 If a request is made for a digit place beyond the bounds of the array,
 you should return 0 as the answer.  This is true for this
-`LargeInteger` example, there are 0 1000s in this place digit.  Likewise, if
-a request is made for a negative place, like `digitAtPlace(-1)` you
-should also return 0.  This check both guards your class from illegally 
-trying to access beyond the bounds of your array, and it will also be
-a useful feature again later when we implement the `add()` operation.
-Both of these conditions are also checked in the unit tests for this
-function.
+`LargeInteger` example, there are 0 1000s in this digit position.
+Likewise, if a request is made for a negative position, like
+`digitAtPosition(-1)` you should also return 0.  This check both guards
+your class from illegally trying to access beyond the bounds of your
+array, and it will also be a useful feature later when we
+implement the `add()` operation.  Both of these conditions are also
+checked in the unit tests for this function.
 
-Once you are satisfied with your implementation of `digitAtPlace()`,
+Once you are satisfied with your implementation of `digitAtPosition()`,
 you should perform the usual steps to finish Task 4 by committing and
 pushing your implementation to your repository, and closing and
 merging the pull request and issue for this task.
@@ -476,7 +476,7 @@ Here is the suggested algorithm  you should try to implement for the
    5 digits.  But as mentioned, we will grow to accommodate a final
    carry in the last step of the algorithm.
 2. Perform the addition, from least significant digit to most significant
-   digit, handling carry as needed.  Use the `digitAtPlace()` member function
+   digit, handling carry as needed.  Use the `digitAtPosition()` member function
    here, as this will determine if each number has a digit, or will return a 0
    if you are beyond the size of each number.  The resulting digits should
    be stored in the new array you allocated in step 1.  Also make sure you
