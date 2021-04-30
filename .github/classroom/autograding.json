@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "test successfully builds",
+      "setup": "",
+      "run": "make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 40
+    },
+    {
+      "name": "test task1tostring",
+      "setup": "make",
+      "run": "./test --list-test-names-only [task1tostring] | grep . && ./test [task1tostring]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "test task2arrayConstructor",
+      "setup": "make",
+      "run": "./test --list-test-names-only [task2arrayConstructor] | grep . && ./test [task2arrayConstructor]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "test task3maxDigits",
+      "setup": "make",
+      "run": "./test --list-test-names-only [task3maxDigits] | grep . && ./test [task3maxDigits]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "test task4digitAtPlace",
+      "setup": "make",
+      "run": "./test --list-test-names-only [task4digitAtPlace] | grep . && ./test [task4digitAtPlace]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "test task5appendDigit",
+      "setup": "make",
+      "run": "./test --list-test-names-only [task5appendDigit] | grep . && ./test [task5appendDigit]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "test task6add",
+      "setup": "make",
+      "run": "./test --list-test-names-only [task6add] | grep . && ./test [task6add]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
