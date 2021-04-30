@@ -57,10 +57,10 @@ private:
 public:
   LargeInteger(); // default constructor
   LargeInteger(int value); // standard constructor
-  // your constructor from an array prototype shoudl go here
+  // your constructor from an array prototype should go here
   ~LargeInteger();
 
-  // you member function declarations/prototypes should go here
+  // your member function declarations/prototypes should go here
 };
 
 

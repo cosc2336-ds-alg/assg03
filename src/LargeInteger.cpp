@@ -87,8 +87,8 @@ LargeInteger::LargeInteger(int value)
  *
  * @param numDigits The number of digits being passed in to be
  *   initialized.
- * @param digits An array of integers representing digits of a
- *   large integer.
+ * @param digit An array of integers representing digits of a
+ *   large integer to be constructed.
  */
 // Your implementation of the constructor from an array of int digits
 // should go here
