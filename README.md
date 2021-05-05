@@ -1,5 +1,5 @@
 ---
-title: 'Assignment 02: Classes, Pointers and Dynamic Memory'
+title: 'Assignment Classes and Memory: Classes, Pointers and Dynamic Memory'
 author: 'COSC 2336: Data Structures and Algorithms'
 date: 'Summer 2021'
 ---
@@ -50,27 +50,29 @@ using and adding code to for this assignment.
 
 | File Name                  | Description                         |
 |----------------------------|-------------------------------------|
-| `src/assg03-tests.cpp`     | Unit tests for the `LargeInteger` class you are to implement.          |
+| `src/assg-tests.cpp`     | Unit tests for the `LargeInteger` class you are to implement.          |
 | `include/LargeInteger.hpp` | Header file for the declarations of the `LargeInteger` class and its defined API. |
 | `src/LargeInteger.cpp`     | Implementation file for the `LargeInteger` member functions that implement the API and class functionality. |
 
 As usual, before starting on the assignment tasks proper, you should make sure
 you have completed the following setup steps.
 
-1. Copy the assignment repository on GitHub using the provided assignment
-   invitation link for assg02 for our current class semester and section.
+1. Copy the assignment repository on GitHub using the provided
+   assignment invitation link for 'Assignment Classes and Memory' for
+   our current class semester and section.
 2. Clone the repository using the SSH url to your local class DevBox
    development environment.
-3. Checkout the 'origins/feedback' branch to your local working DevBox
+3. Checkout the 'origins/feedback' branch to your locak working DevBox
    repository.
-4. Confirm that the project builds and runs, though no tests will be
+4. Configure the project by running the `configure` script from a terminal.
+5. Confirm that the project builds and runs, though no tests will be
    defined or run initially.  If the project does not build on the first
    checkout, please inform the instructor.
-5. You should create the issue for Task 1 and/or for all tasks for the assignment
+6. You should create the issue for Task 1 and/or for all tasks for the assignment
    now before beginning the first task.  On your GitHub account, go to issues,
    and create it/them from the issue templates for the assignment.  Also you
    should close the initial Pull request that should be automatically
-   opened for you, so that you can open your own when committing your work.
+   opened for you, so that you can open your own when commiting your work.
 
 
 # Assignment Tasks

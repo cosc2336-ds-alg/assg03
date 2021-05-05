@@ -1,11 +1,11 @@
-/** @file assg03-main.cpp
- * @brief main/debug executable for Assignment 03, practice with classes
- *   and dynamic memory allocation.
+/** @file assg-main.cpp
+ * @brief main/debug executable for Assignment Classes and Memory,
+ *   practice with classes and dynamic memory allocation.
  *
  * @author Derek Harter
  * @note   class: COSC 2336, Summer 2021
  * @note   ide  : VSCode Server 3.9.3, Gnu Development Tools
- * @note   assg : Assignment 02
+ * @note   assg : Assignment Classes and Memory
  * @date   June 1, 2021
  *
  * Practice with classes and dynamic memory allocation.  In this assignment we
