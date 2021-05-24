@@ -161,7 +161,7 @@ a member function in the implementation file, something like this:
 ```c++
 string LargeInteger::tostring() const
 {
-  return ""
+  return "";
 }
 ```
 
@@ -180,8 +180,9 @@ the `Feedback` pull request of your class repository.
 
 ## Task 2: Implement Array Based `LargeInteger` Constructor
 
-Make sure you have created Issue 2 for this task.  And it would be best to close
-and merge your first pull request before continuing on to Task 2.
+Make sure you have created Issue 2 for this task and associated the
+issue with the `Feedback` pull request before implementing
+your constructor fo this task 2.
 
 You were given two different class constructors for the `LargeInteger`
 class, both of which were used in the first set of unit tests.
@@ -206,28 +207,35 @@ the array from a single `int` value, we don't have to do any parsing
 of the digits, simply copy the digits from the given input array into our
 `digit[]` array.
 
-Start by creating a stub implementation of your new constructor.
-You should uncomment second unit test in our test file, which has the tests
-for the constructor you are to create here.  I would suggest you copy and paste
-the default constructor to begin with.  Add in the function prototype to the
-header file, and an empty implementation in the implementation file.  This
-constructor differs from the other existing constructors because of the input
-parameter it expects.  Your constructor here should be expecting two parameters.
-The first parameter is the size of the array of integers it will be given to
-initialize the `LargeInteger` object with.  The second parameter is the actual
-array of integer digits to use for the initialization.  You will have to get
-the signature of the constructor correct in order to compile your project.
-But your implementation can do nothing, or be a copy of the default constructor,
-initially.  Do this to make sure you can compile your project and run the second
-set of tests before trying to implement the function.
+Start by creating a stub implementation of your new constructor.  You
+should uncomment the second unit test in our test file, which has the
+tests for the constructor you are to create here.  I would suggest you
+copy and paste the default constructor to begin with.  Add in the
+function prototype to the header file, and an empty implementation in
+the implementation file.  This constructor differs from the other
+existing constructors because of the input parameter it expects.  Your
+constructor here should be expecting two parameters.  The first
+parameter is the size of the array of integers it will be given to
+initialize the `LargeInteger` object with.  The second parameter is
+the actual array of integer digits to use for the initialization.  The
+array should be passed in as a `const` parameter, as we learned about
+in our previous assignment.  You will have to get the signature of the
+constructor correct in order to compile your project.  But your
+implementation can do nothing, or be a copy of the default
+constructor, initially.  Do this to make sure you can compile your
+project and run the second set of tests before trying to implement the
+function.
 
-Your implementation will be similar to the constructor that constructs the digits
-from an existing integer.  You will need to dynamically allocate a new array
-of `digit[]` integers.  However, unlike the existing constructor, you are given
-explicitly as the first parameter the size that this array needs to be when
-you construct it.  Once the array has been dynamically allocate, you can then
-simply copy over the digits from the given input array, into your `digit[]`
-array.
+Your implementation will be similar to the constructor that constructs
+the digits from an existing integer.  You will need to dynamically
+allocate a new array of `digit[]` integers.  However, unlike the
+existing constructor, you are given explicitly as the size that this
+array needs to be as the first parameter.  Once the array has been
+dynamically allocated, you can then simply copy over the digits from
+the given input array, into your `digit[]` array.  We assume that all
+digits are in the range from 0-9, but it might be a good idea in a
+future implementation to actually check each digit is in the correct
+range in this constructor.
 
 Once you have implemented your new constructor, the tests in the
 second test case should now all be able to pass.  When you are
@@ -238,11 +246,11 @@ them to the `Feedback` pull request.
 
 ## Task 3: Implement `maxDigits()` Member Function
 
-Make sure that you have created Task 3 and are ready for a new pull request before
-beginning this next task.
+Make sure that you have created the issue for task 3 and have
+linked it to the `Feedback` pull request.
 
-The third unit test test the `maxDigits()` member function you are to 
-implement next, though it is proceeded by a test framework of some
+The third unit test is for the `maxDigits()` member function you are to 
+implement next, though it is preceeded by a test framework of some
 `LargeInteger` instances we will need to use in this and the remaining
 tests, so uncomment those as well.  As usual, you should then create
 the function prototype in the header file, and create a stub function
@@ -290,9 +298,9 @@ larger of the number of digits in the two instances.  Once you have
 done this, the tests in the third test case testing this function
 should now be passing.  When you are satisfied with your work, and the
 project still compiles and now passes all of the unit tests in the
-first 3 test cases, do the usual to create and push a commit, update
-the pull request, merge in the changes and close the third issue
-covering this task.
+first 3 test cases, do the usual to create and push a commit, and check
+that it correctly runs the task 3 actions in your GitHub classroom
+repository once you push your work.
 
 ## Task 4: Implement `digitAtPosition()` Member Function
 
@@ -347,8 +355,8 @@ checked in the unit tests for this function.
 
 Once you are satisfied with your implementation of `digitAtPosition()`,
 you should perform the usual steps to finish Task 4 by committing and
-pushing your implementation to your repository, and closing and
-merging the pull request and issue for this task.
+pushing your implementation to the `Feedback` pull request of your
+GitHub class repository.
 
 
 ## Task 5: Implement `appendDigit()` Member Function

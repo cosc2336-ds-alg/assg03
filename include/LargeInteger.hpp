@@ -37,6 +37,7 @@ using namespace std;
 class LargeInteger
 {
 public:
+  // class constructors and destructors
   LargeInteger(); // default constructor
   LargeInteger(int value); // standard constructor
   // your constructor from an array prototype should go here
