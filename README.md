@@ -48,11 +48,11 @@ memory, which would be a lot of digits indeed).
 For this assignment you will be given the following files that you will be
 using and adding code to for this assignment.
 
-| File Name                   | Description                                                                                                 |
-|-----------------------------|-------------------------------------------------------------------------------------------------------------|
-| `src/test-LargeInteger.cpp` | Unit tests for the `LargeInteger` class you are to implement.                                               |
-| `include/LargeInteger.hpp`  | Header file for the declarations of the `LargeInteger` class and its defined API.                           |
-| `src/LargeInteger.cpp`      | Implementation file for the `LargeInteger` member functions that implement the API and class functionality. |
+| File Name                             | Description                                                                                                 |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `src/test-LargeInteger.cpp`           | Unit tests for the `LargeInteger` class you are to implement.                                               |
+| `include/LargeInteger.hpp`            | Header file for the declarations of the `LargeInteger` class and its defined API.                           |
+| `src/LargeInteger.cpp`                | Implementation file for the `LargeInteger` member functions that implement the API and class functionality. |
 
 As usual, before starting on the assignment tasks proper, you should make sure
 you have completed the following setup steps.
