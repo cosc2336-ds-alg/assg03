@@ -48,11 +48,11 @@ memory, which would be a lot of digits indeed).
 For this assignment you will be given the following files that you will be
 using and adding code to for this assignment.
 
-| File Name                  | Description                         |
-|----------------------------|-------------------------------------|
-| `src/assg-tests.cpp`     | Unit tests for the `LargeInteger` class you are to implement.          |
-| `include/LargeInteger.hpp` | Header file for the declarations of the `LargeInteger` class and its defined API. |
-| `src/LargeInteger.cpp`     | Implementation file for the `LargeInteger` member functions that implement the API and class functionality. |
+| File Name                   | Description                                                                                                 |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------|
+| `src/test-LargeInteger.cpp` | Unit tests for the `LargeInteger` class you are to implement.                                               |
+| `include/LargeInteger.hpp`  | Header file for the declarations of the `LargeInteger` class and its defined API.                           |
+| `src/LargeInteger.cpp`      | Implementation file for the `LargeInteger` member functions that implement the API and class functionality. |
 
 As usual, before starting on the assignment tasks proper, you should make sure
 you have completed the following setup steps.
@@ -62,25 +62,21 @@ you have completed the following setup steps.
    our current class semester and section.
 2. Clone the repository using the SSH url to your local class DevBox
    development environment.
-3. Checkout the 'origins/feedback' branch to your locak working DevBox
-   repository.
-4. Configure the project by running the `configure` script from a terminal.
-5. Confirm that the project builds and runs, though no tests will be
+3. Configure the project by running the `configure` script from a terminal.
+4. Confirm that the project builds and runs, though no tests will be
    defined or run initially.  If the project does not build on the first
    checkout, please inform the instructor.
-6. You should create the issue for Task 1 and/or for all tasks for the assignment
+5. You should create the issue for Task 1 and/or for all tasks for the assignment
    now before beginning the first task.  On your GitHub account, go to issues,
-   and create it/them from the issue templates for the assignment.  Also you
-   should close the initial Pull request that should be automatically
-   opened for you, so that you can open your own when commiting your work.
+   and create it/them from the issue templates for the assignment.
 
 
 # Assignment Tasks
 
 ## Task 1: Implement `tostring()` Member Method
 
-If you haven't already, create the Task 1 issue on GitHub and close
-the initial Pull request if it is still open.
+If you haven't already, create the Task 1 issue on GitHub and associate
+the task 1 issue with the `Feedback` pull request in your class repository.
 
 For the first task you will provide an implementation of the `tostring()`
 method.  We need this method to perform some of our unit testing
@@ -179,8 +175,7 @@ first set of tests.
 
 When you are satisfied with your work and you can compile and pass the
 first set of tests, you should commit your changes and push them to
-the repository using the `feedback` branch, and then document with a
-pull request and merge the changes to the main branch.
+the `Feedback` pull request of your class repository.
 
 
 ## Task 2: Implement Array Based `LargeInteger` Constructor
@@ -237,8 +232,7 @@ array.
 Once you have implemented your new constructor, the tests in the
 second test case should now all be able to pass.  When you are
 satisfied this is all working so far, commit your changes and push
-them to the `feedback` branch, and close out your Task #2 and the pull
-request you should have created for this task.
+them to the `Feedback` pull request.
 
 
 
@@ -413,11 +407,10 @@ non-zero digit.  If a 0 is asked to be appended, just simply ignore
 the request and do nothing.  This again will make the implementation
 of the `add()` operation easier.
 
-Once you implement the `appendDigit()` as described, it should be able to
-pass all of the given unit tests for this task 5.  As usual when you are
-satisfied, create a commit and push it to your `feedback` branch, and
-then close and merge your pull request and issue associated with
-Task 5.
+Once you implement the `appendDigit()` as described, it should be able
+to pass all of the given unit tests for this task 5.  As usual when
+you are satisfied, create a commit and push it to your `Feedback` pull
+request.
 
 
 ## Task 6: Implement `add()` Operation Member Function
@@ -504,9 +497,11 @@ Here is the suggested algorithm  you should try to implement for the
    computed and assigned to it.
 
 Once you implement the `add()` operator as described, it should be
-able to pass all of the given unit tests for this task 6.  As usual when
-you are satisfied, create a commit and push it to your `feedback` branch,
-and then close and merge your pull request and issue associated with Task 6.
+able to pass all of the given unit tests for this task 6.  As usual
+when you are satisfied, create a commit and push it to your `Feedback`
+pull request.  This is the final task, so hopefully if you check the
+GitHub auto grading actions, you should now be passing all tests and
+getting 100/100 from the auto grader.
 
 
 # Assignment Submission
@@ -515,7 +510,7 @@ For this class, the submission process is to correctly create pull
 request(s) with changes committed and pushed to your copied repository
 for grading and evaluation.  For the assignments, you may not be able
 to complete all tasks and have all of the tests successfully
-finishing.  This is ok.  However, you should endeavor to have as many
+finishing.  This is OK.  However, you should endeavor to have as many
 of the tasks completed before the deadline for the assignment as
 possible.  Also, try and make sure that you only push commits that are
 building and able to run the tests.  You may loose points for pushing 
@@ -525,7 +520,7 @@ properly compiling and running the tests.
 In this problem, up to 40 points will be given for having at least 1
 commit that compiles and runs the tests (and at least some attempt was made
 to work on the first task).  Thereafter 10 points are awarded for 
-completing each of the 6 tasks.  However you should note that the autograder
+completing each of the 6 tasks.  However you should note that the auto grader
 awards either all point for passing all tests, or no points if any test
 is failing for one of the tasks.  Also note that even if you pass all
 tests, when the instructor evaluates your assignment, they may remove points
@@ -540,30 +535,34 @@ to fix issues with your current submission.
 
 ## Program Style
 
-At some point you will be required to follow class style and formatting guidelines.
-The VSCode environment has been set up to try and format your code for some of these
-guidelines automatically to conform to class style requirements.  But not all 
-style issues can be enforced by the IDE/Editor.  The instructor may give you feedback
-in your pull comments and/or create issues for you for the assignment that you need to 
-address and fix.  You should address those if asked, and push a new commit that fixes
-the issue (or ask for clarification if you don't understand the request).  In general
-the following style/formatting issues will be required for programs for this class:
+At some point you will be required to follow class style and
+formatting guidelines.  The VSCode environment has been set up to try
+and format your code for some of these guidelines automatically to
+conform to class style requirements.  But not all style issues can be
+enforced by the IDE/Editor.  The instructor may give you feedback in
+your pull comments and/or create issues for you for the assignment
+that you need to address and fix.  You should address those if asked,
+and push a new commit that fixes the issue (or ask for clarification
+if you don't understand the request).  In general the following
+style/formatting issues will be required for programs for this class:
 
-1. All programs must be properly indented.  All indentation must be consistent and lined
-   up correctly.  Class style requires 2 spaces with no embedded tabs for all code 
-   indentation levels.  The editor style checker should properly indent your code when you
-   save it, but if not you may need to check or correct this if code is misaligned or not
-   properly indented.
-2. Variable and function names must use `camelCaseNameingNotation`.  All variable and function
-   names must begin with a lowercase letter.  Do not use underscores between words in
-   the variable or function name.  Often function names will be given to you, but you
-   will need to create variables, and maybe some functions, that conform to the naming
-   conventions.
-   - Global constants should be used instead of magic numbers.  Global constants are
-     identified using `ALL_CAPS_UNDERLINE_NAMING`.
-   - User defined types, such as classes, structures and enumerated types should use
-     camel case notation, but should begin with an initial upper case letter, thus
-	 `MyUserDefinedClass`.
+1. All programs must be properly indented.  All indentation must be
+   consistent and lined up correctly.  Class style requires 2 spaces
+   with no embedded tabs for all code indentation levels.  The editor
+   style checker should properly indent your code when you save it,
+   but if not you may need to check or correct this if code is
+   misaligned or not properly indented.
+2. Variable and function names must use `camelCaseNameingNotation`.
+   All variable and function names must begin with a lowercase letter.
+   Do not use underscores between words in the variable or function
+   name.  Often function names will be given to you, but you will need
+   to create variables, and maybe some functions, that conform to the
+   naming conventions.
+   - Global constants should be used instead of magic numbers.  Global
+     constants are identified using `ALL_CAPS_UNDERLINE_NAMING`.
+   - User defined types, such as classes, structures and enumerated
+     types should use camel case notation, but should begin with an
+     initial upper case letter, thus `MyUserDefinedClass`.
 3. You are required to use meaningful variable and function names.
    Choosing good names for code items is an important skill.  The code
    examples and starting code tries to give examples of good and

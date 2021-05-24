@@ -3,10 +3,13 @@ VERSION=0.3
 BASE_DIR := ../assg-base-$(VERSION)
 PROJECT_NAME=assg
 
-test_src  = $(PROJECT_NAME)-tests.cpp \
-	    LargeInteger.cpp
-debug_src = $(PROJECT_NAME)-main.cpp \
-	    LargeInteger.cpp
+assg_src = LargeInteger.cpp
+
+test_src  = test-LargeInteger.cpp \
+	    ${assg_src}
+
+debug_src = main.cpp \
+	    ${assg_src}
 
 # template files, list all files that define template classes
 # or functions and should not be compiled separately (template

@@ -1,9 +1,9 @@
 /** @file LargeInteger.hpp
+ *
  * @brief Header file for Assignment Classes and Memory: practie with
  *   classes and dynamic memory allocation.
  *
  * @author Jane Programmer
- * @note   cwid : 123 45 678
  * @note   class: COSC 2336, Summer 2021
  * @note   ide  : VSCode Server 3.9.3, Gnu Development Tools
  * @note   assg : Assignment Classes and Memory
@@ -36,6 +36,14 @@ using namespace std;
  */
 class LargeInteger
 {
+public:
+  LargeInteger(); // default constructor
+  LargeInteger(int value); // standard constructor
+  // your constructor from an array prototype should go here
+  ~LargeInteger();
+
+  // your member function declarations/prototypes should go here
+
 private:
   /// @brief id private member integer variable, this is not strictly needed
   ///   for this class, but we assign a unique id to each instance of
@@ -53,14 +61,6 @@ private:
   ///   index 0 of the array, the 10's place (10^1) is in the index 1, and so
   ///    on.
   int* digit;
-
-public:
-  LargeInteger(); // default constructor
-  LargeInteger(int value); // standard constructor
-  // your constructor from an array prototype should go here
-  ~LargeInteger();
-
-  // your member function declarations/prototypes should go here
 };
 
 

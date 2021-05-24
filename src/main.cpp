@@ -1,4 +1,5 @@
-/** @file assg-main.cpp
+/** @file main.cpp
+ *
  * @brief main/debug executable for Assignment Classes and Memory,
  *   practice with classes and dynamic memory allocation.
  *
@@ -22,7 +23,8 @@
 using namespace std;
 
 
-/** main entry point
+/** @brief Main entry point
+ *
  * Main entry point for debugging functions.
  *
  * @param argc The command line argument count, the number of arguments
@@ -45,7 +47,8 @@ int main(int argc, char** argv)
      cout << "Expected result 2147483648, got result: " << res << endl;
      assert(res == "2147483648"); // will fail assertion if we don't get what we expect
    */
-
+  cout << "Assignment Classes and Memory hello world" << endl;
+  
   // return 0 to indicate successful completion of program
   return 0;
 }

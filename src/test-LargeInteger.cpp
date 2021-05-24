@@ -1,4 +1,5 @@
-/** @file assg-tests.cpp
+/** @file test-LargeInteger.cpp
+ *
  * @brief Unit tests for Assignment Classes and Memory, practice with
  *   classes and dynamic memory allocation.
  *
@@ -20,7 +21,7 @@
 using namespace std;
 
 
-/** test default constructor and tostring() implementation
+/** Task 1: test default constructor and tostring() implementation
  * Uncomment the following test case block and write your code to pass
  * the tests.  You were given a default and standard constructor for
  * the class.  You need to implement the tostring() method, which we
@@ -30,7 +31,7 @@ using namespace std;
 /* uncomment the tests cases 1 at a time.  This test case tests implementation
  * of the tostring() member function which we use for further testing.
    TEST_CASE("<tostring()> member function tests using default and standard constructor",
-             "[task1tostring]")
+             "[task1]")
    {
    LargeInteger li1;
    CHECK( li1.tostring() == "0" );
@@ -45,14 +46,14 @@ using namespace std;
  */
 
 
-/** test array constructor
+/** Task 2: test array based constructor implementation
  * Uncomment the following test case block and write your code to pass
  * the tests.
  */
 /* uncomment this test case when ready to implement and test the
  * array constructor you are to create
    TEST_CASE("<array constructor> constructor function tests",
-             "[task2arrayConstructor]")
+             "[task2]")
    {
    // a kind of large integer
    int digits1[] = {8, 4, 6, 3, 8, 4, 7, 4, 1, 2};
@@ -71,7 +72,8 @@ using namespace std;
 
 /** Test fixture of some LargeInteger instances to be used in the following
  * tests.  Define a diverse set of large integer instances that we can
- * reuse in all of the following test cases
+ * reuse in all of the following test cases.  Uncomment these for
+ * Task 3 and subsequent tests.
  */
 /* uncomment this fixture before performing the following test cases
    struct LargeIntegerTestFixture
@@ -101,14 +103,14 @@ using namespace std;
  */
 
 
-/** test maxDigits() member function
+/** Task 3: test maxDigits() member function
  * Uncomment the following test case block and write your code to pass
  * the tests.
  */
 /* uncomment this test case to work on implementation of maxDigits()
  * member function
    TEST_CASE_METHOD(LargeIntegerTestFixture,
-     "<maxDigits()> member function tests", "[task3maxDigits]")
+     "<maxDigits()> member function tests", "[task3]")
    {
    SECTION("test of maxDigits() member function")
    {
@@ -137,14 +139,14 @@ using namespace std;
  */
 
 
-/** test digitAtPosition() member function
+/** Task 4: test digitAtPosition() member function
  * Uncomment the following test case block and write your code to pass
  * the tests.
  */
 /* uncomment this test case to work on implementation of digitAtPosition()
  * member function
    TEST_CASE_METHOD(LargeIntegerTestFixture,
-     "<digitAtPosition()> member function tests (reading values)", "[task4digitAtPosition]")
+     "<digitAtPosition()> member function tests (reading values)", "[task4]")
    {
    SECTION("test of digitAtPosition() member function")
    {
@@ -183,14 +185,14 @@ using namespace std;
  */
 
 
-/** test appendDigit() member function
+/** Task 5: test appendDigit() member function
  * Uncomment the following test case block and write your code to pass
  * the tests.
  */
 /* uncomment this test case to work on implementation of appendDigit()
  * member function
    TEST_CASE_METHOD(LargeIntegerTestFixture,
-     "<appendDigit()> member function tests", "[task5appendDigit]")
+     "<appendDigit()> member function tests", "[task5]")
    {
    SECTION("test of appendDigit() member function")
    {
@@ -217,13 +219,13 @@ using namespace std;
  */
 
 
-/** test add() member function
+/** Task 6: test add() member function
  * Uncomment the following test case block and write your code to pass
  * the tests.
  */
 /* uncomment this test case to work on implementation of add() member function
    TEST_CASE_METHOD(LargeIntegerTestFixture,
-     "<add()> member function tests", "[task6add]")
+     "<add()> member function tests", "[task6]")
    {
    SECTION("")
    {

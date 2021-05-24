@@ -1,19 +1,20 @@
 /** @file LargeInteger.cpp
+ *
  * @brief Implementation file for Assignment Classes and Memory,
  *   practice with classes and dynamic memory allocation.
  *
  * @author Jane Programmer
- * @note   cwid : 123 45 678
  * @note   class: COSC 2336, Summer 2021
  * @note   ide  : VSCode Server 3.9.3, Gnu Development Tools
  * @note   assg : Assignment Classes and Memory
  * @date   June 1, 2021
  *
- * LargeInteger class.  This is the class implementation file. It contains the
- * implementation of all of the member functions declared in the header file.
- * Since implementation is separated from the declaration of each member
- * function, you must indicate each function is a member of the LargeIneger
- * class by prepending member function name with LargeInteger::
+ * LargeInteger class.  This is the class implementation file. It
+ * contains the implementation of all of the member functions declared
+ * in the header file.  Since implementation is separated from the
+ * declaration of each member function, you must indicate each
+ * function is a member of the LargeIneger class by prepending member
+ * function name with LargeInteger::
  */
 #include "LargeInteger.hpp"
 
@@ -26,7 +27,8 @@ using namespace std;
 static int nextLargeIntegerId = 1;
 
 
-/** LargeInteger constructor
+/** @brief LargeInteger default constructor
+ *
  * Default constructor for LargeInteger class. By default we construct
  * with a value of 0 being represented.
  */
@@ -46,7 +48,8 @@ LargeInteger::LargeInteger()
 }
 
 
-/** LargeInteger constructor
+/** @brief LargeInteger from int constructor
+ *
  * Constructor for LargeInteger class that takes a simple built-in
  * integer to be used as the initial value of the large integer.
  *
@@ -81,7 +84,8 @@ LargeInteger::LargeInteger(int value)
 }
 
 
-/** LargeInteger constructor
+/** @brief LargeInteger array based constructor
+ *
  * Constructor for LargeInteger class that takes an array of digits
  * and initializes this large integers digits to the given values.
  *
@@ -94,7 +98,8 @@ LargeInteger::LargeInteger(int value)
 // should go here
 
 
-/** LargeInteger destructor
+/** @brief LargeInteger destructor
+ *
  * Destructor for the LargeInteger class.  Make sure we are good
  * managers of memory by freeing up our digits when this object
  * goes out of scope.
@@ -110,7 +115,8 @@ LargeInteger::~LargeInteger()
 }
 
 
-/** LargeInteger tostring
+/** @brief LargeInteger tostring
+ *
  * Represent this large integer as a string value
  *
  * @returns string The large integer as a string
@@ -118,7 +124,8 @@ LargeInteger::~LargeInteger()
 // your implementation of the tostring() member function should go here
 
 
-/** LargeInteger max digits
+/** @brief Maximum number of digits
+ *
  * Return the larger of the number of digits (numDigits) between
  * this object and the other LargeInteger object.  This might
  * not be so useful to users of this data type, but the first
@@ -136,7 +143,8 @@ LargeInteger::~LargeInteger()
 // your implementation of the maxDigits() member function should go here
 
 
-/** LargeInteger digit at position
+/** @brief Digit at position
+ *
  * Given a position, return the digit at the given index of
  * this LargeInteger.  The digitIndex passed in refers to
  * the place or power of the digit needed.  For example
@@ -157,7 +165,8 @@ LargeInteger::~LargeInteger()
 // your implementation of the digitAtPosition() member function should go here
 
 
-/** LargeInteger append digit
+/** @brief Append digit
+ *
  * Append the indicated digit to the most significant place of this
  * digit.  This function is not so useful to users of LargeInteger.
  * However, for arithemetic operations, if there is carry over from
@@ -170,7 +179,8 @@ LargeInteger::~LargeInteger()
 // your implementation of the appendDigit() member function should go here
 
 
-/** LargeInteger add
+/** @brief Add large integers
+ *
  * Add this LargeInteger to the other LargeInteger passed in as
  * a parameter.
  *

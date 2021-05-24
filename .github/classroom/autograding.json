@@ -11,9 +11,9 @@
       "points": 40
     },
     {
-      "name": "test task1tostring",
+      "name": "task 1 test tostring member method",
       "setup": "make",
-      "run": "./test --list-test-names-only [task1tostring] | grep . && ./test [task1tostring]",
+      "run": "./test --list-test-names-only [task1] | grep . && ./test [task1]",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -21,9 +21,9 @@
       "points": 10
     },
     {
-      "name": "test task2arrayConstructor",
+      "name": "task 2 test array baded onstructor",
       "setup": "make",
-      "run": "./test --list-test-names-only [task2arrayConstructor] | grep . && ./test [task2arrayConstructor]",
+      "run": "./test --list-test-names-only [task2] | grep . && ./test [task2]",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -31,9 +31,9 @@
       "points": 10
     },
     {
-      "name": "test task3maxDigits",
+      "name": "task 3 test maxDigits() member function",
       "setup": "make",
-      "run": "./test --list-test-names-only [task3maxDigits] | grep . && ./test [task3maxDigits]",
+      "run": "./test --list-test-names-only [task3] | grep . && ./test [task3]",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -41,9 +41,9 @@
       "points": 10
     },
     {
-      "name": "test task4digitAtPosition",
+      "name": "task 4 test digitAtPosition() member function",
       "setup": "make",
-      "run": "./test --list-test-names-only [task4digitAtPosition] | grep . && ./test [task4digitAtPosition]",
+      "run": "./test --list-test-names-only [task4] | grep . && ./test [task4]",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -51,9 +51,9 @@
       "points": 10
     },
     {
-      "name": "test task5appendDigit",
+      "name": "task 5 test appendDigit() member function",
       "setup": "make",
-      "run": "./test --list-test-names-only [task5appendDigit] | grep . && ./test [task5appendDigit]",
+      "run": "./test --list-test-names-only [task5] | grep . && ./test [task5]",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -61,9 +61,9 @@
       "points": 10
     },
     {
-      "name": "test task6add",
+      "name": "task 6 test add() member function",
       "setup": "make",
-      "run": "./test --list-test-names-only [task6add] | grep . && ./test [task6add]",
+      "run": "./test --list-test-names-only [task6] | grep . && ./test [task6]",
       "input": "",
       "output": "",
       "comparison": "included",
