@@ -15,11 +15,10 @@
  * LargeInteger object.  This file is a set of unit tests of the
  * LargeInteger class using the catch2 unit test framework.
  */
-#include <iostream>
-#include "catch.hpp"
 #include "LargeInteger.hpp"
+#include "catch.hpp"
+#include <iostream>
 using namespace std;
-
 
 /** Task 1: test default constructor and tostring() implementation
  * Uncomment the following test case block and write your code to pass
@@ -45,7 +44,6 @@ using namespace std;
    }
  */
 
-
 /** Task 2: test array based constructor implementation
  * Uncomment the following test case block and write your code to pass
  * the tests.
@@ -68,7 +66,6 @@ using namespace std;
    CHECK( li2.tostring() == "820243916701269483729534563742" );
    }
  */
-
 
 /** Test fixture of some LargeInteger instances to be used in the following
  * tests.  Define a diverse set of large integer instances that we can
@@ -101,7 +98,6 @@ using namespace std;
    LargeInteger li6 = LargeInteger(17, digits6);
    };
  */
-
 
 /** Task 3: test maxDigits() member function
  * Uncomment the following test case block and write your code to pass
@@ -137,7 +133,6 @@ using namespace std;
    }
    }
  */
-
 
 /** Task 4: test digitAtPosition() member function
  * Uncomment the following test case block and write your code to pass
@@ -184,7 +179,6 @@ using namespace std;
    }
  */
 
-
 /** Task 5: test appendDigit() member function
  * Uncomment the following test case block and write your code to pass
  * the tests.
@@ -217,7 +211,6 @@ using namespace std;
    }
    }
  */
-
 
 /** Task 6: test add() member function
  * Uncomment the following test case block and write your code to pass

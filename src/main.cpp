@@ -15,13 +15,12 @@
  * stub for a main() function so that we can build a version suitable for
  * running in the debugger.
  */
+#include "LargeInteger.hpp"
 #include <cassert>
 #include <cmath>
 #include <iostream>
 #include <string>
-#include "LargeInteger.hpp"
 using namespace std;
-
 
 /** @brief Main entry point
  *
@@ -48,7 +47,7 @@ int main(int argc, char** argv)
      assert(res == "2147483648"); // will fail assertion if we don't get what we expect
    */
   cout << "Assignment Classes and Memory hello world" << endl;
-  
+
   // return 0 to indicate successful completion of program
   return 0;
 }

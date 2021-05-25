@@ -19,14 +19,13 @@
 #ifndef _LARGEINTEGER_H_
 #define _LARGEINTEGER_H_
 
-#include <iostream>
 #include <algorithm>
-#include <string>
-#include <sstream>
 #include <cmath>
+#include <iostream>
+#include <sstream>
+#include <string>
 
 using namespace std;
-
 
 /** LargeInteger class.
  * Represent an arbitrarily large (signed) integer.  This class keeps the
@@ -38,7 +37,7 @@ class LargeInteger
 {
 public:
   // class constructors and destructors
-  LargeInteger(); // default constructor
+  LargeInteger();          // default constructor
   LargeInteger(int value); // standard constructor
   // your constructor from an array prototype should go here
   ~LargeInteger();
@@ -63,6 +62,5 @@ private:
   ///    on.
   int* digit;
 };
-
 
 #endif

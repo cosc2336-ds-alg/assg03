@@ -20,12 +20,10 @@
 
 using namespace std;
 
-
 // integer to create unique id for new LargeInteger instances
 // please set and use this in the same way in the constructor you
 // create for this assignment
 static int nextLargeIntegerId = 1;
-
 
 /** @brief LargeInteger default constructor
  *
@@ -47,7 +45,6 @@ LargeInteger::LargeInteger()
   digit[0] = 0;
 }
 
-
 /** @brief LargeInteger from int constructor
  *
  * Constructor for LargeInteger class that takes a simple built-in
@@ -64,7 +61,7 @@ LargeInteger::LargeInteger(int value)
   // first determine number of digits, so we know what size of array
   // to construct dynamically
   // https://stackoverflow.com/questions/1489830/efficient-way-to-determine-number-of-digits-in-an-integer
-  numDigits = (int) log10((double) value) + 1;
+  numDigits = (int)log10((double)value) + 1;
 
   // allocate an array of the right size
   digit = new int[numDigits];
@@ -83,7 +80,6 @@ LargeInteger::LargeInteger(int value)
   }
 }
 
-
 /** @brief LargeInteger array based constructor
  *
  * Constructor for LargeInteger class that takes an array of digits
@@ -97,7 +93,6 @@ LargeInteger::LargeInteger(int value)
 // Your implementation of the constructor from an array of int digits
 // should go here
 
-
 /** @brief LargeInteger destructor
  *
  * Destructor for the LargeInteger class.  Make sure we are good
@@ -108,12 +103,11 @@ LargeInteger::~LargeInteger()
 {
   // uncomment following output statement to debug/follow destruction of
   // LargeInteger instances
-  //cout << "<LargeInteger::~LargeInteger> destructor entered, freeing my digits" << endl
+  // cout << "<LargeInteger::~LargeInteger> destructor entered, freeing my digits" << endl
   //     << "     id = " << id << endl
   //     << "     value=" << tostring() << endl;
   delete[] this->digit;
 }
-
 
 /** @brief LargeInteger tostring
  *
@@ -122,7 +116,6 @@ LargeInteger::~LargeInteger()
  * @returns string The large integer as a string
  */
 // your implementation of the tostring() member function should go here
-
 
 /** @brief Maximum number of digits
  *
@@ -141,7 +134,6 @@ LargeInteger::~LargeInteger()
  *   referenced objects.
  */
 // your implementation of the maxDigits() member function should go here
-
 
 /** @brief Digit at position
  *
@@ -164,7 +156,6 @@ LargeInteger::~LargeInteger()
  */
 // your implementation of the digitAtPosition() member function should go here
 
-
 /** @brief Append digit
  *
  * Append the indicated digit to the most significant place of this
@@ -177,7 +168,6 @@ LargeInteger::~LargeInteger()
  *   of this object.
  */
 // your implementation of the appendDigit() member function should go here
-
 
 /** @brief Add large integers
  *
