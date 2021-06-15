@@ -461,6 +461,27 @@ reference, not an actual value.  This will avoid a copy of the object having to
 be made on the return.  But this forces you to create the object dynamically
 to be returned in your `add()` function.
 
+And finally, like `tostring()`, `maxDigits()` and `digitAtPosition()`, `add()`
+should be a `const` member function.  The add function should not be modifying
+the instance that `add()` is called on, nor should it modify the other
+`LargeInteger` that is passed in as a parameter.  We prevent the later by
+declaring that the other `LargeInteger` parameter is a `const` parameter.
+But to declare that this instance is also not changed by the add, we need
+to make the function a `const` member function.  Think of it this way,
+if you execute the following code:
+
+```
+int x = 3;
+int y = 5;
+int z = x + y;
+```
+
+you would expect `z` to have a value of 8, the result of the addition.
+But you also do not expect either `x` nor `y` to have their value
+changed.  The are `const` during the add operation, their values do
+not change, their values are used to create and assign a value to a
+new integer `z`.
+
 Here is the suggested algorithm  you should try to implement for the
 `add()` operator:
 
