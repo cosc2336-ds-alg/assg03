@@ -182,7 +182,7 @@ the `Feedback` pull request of your class repository.
 
 Make sure you have created Issue 2 for this task and associated the
 issue with the `Feedback` pull request before implementing
-your constructor fo this task 2.
+your constructor for this task 2.
 
 You were given two different class constructors for the `LargeInteger`
 class, both of which were used in the first set of unit tests.
@@ -250,7 +250,7 @@ Make sure that you have created the issue for task 3 and have
 linked it to the `Feedback` pull request.
 
 The third unit test is for the `maxDigits()` member function you are to 
-implement next, though it is preceeded by a test framework of some
+implement next, though it is preceded by a test framework of some
 `LargeInteger` instances we will need to use in this and the remaining
 tests, so uncomment those as well.  As usual, you should then create
 the function prototype in the header file, and create a stub function
