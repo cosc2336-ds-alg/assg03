@@ -1,7 +1,7 @@
 ---
 title: 'Assignment Classes and Memory: Classes, Pointers and Dynamic Memory'
 author: 'COSC 2336: Data Structures and Algorithms'
-date: 'Summer 2021'
+date: 'Spring 2024'
 ---
 
 
@@ -50,7 +50,7 @@ using and adding code to for this assignment.
 
 | File Name                             | Description                                                                                                 |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| `src/test-LargeInteger.cpp`           | Unit tests for the `LargeInteger` class you are to implement.                                               |
+| `src/assg03-tests.cpp`                | Unit tests for the `LargeInteger` class you are to implement.                                               |
 | `include/LargeInteger.hpp`            | Header file for the declarations of the `LargeInteger` class and its defined API.                           |
 | `src/LargeInteger.cpp`                | Implementation file for the `LargeInteger` member functions that implement the API and class functionality. |
 
@@ -61,12 +61,12 @@ you have completed the following setup steps.
    assignment invitation link for 'Assignment Classes and Memory' for
    our current class semester and section.
 2. Clone the repository using the SSH url to your local class DevBox
-   development environment.
-3. Configure the project by running the `configure` script from a terminal.
-4. Confirm that the project builds and runs, though no tests will be
+   development environment. Make sure that open the cloned
+   folder and restart inside of the correct Dev Container.
+3. Confirm that the project builds and runs, though no tests will be
    defined or run initially.  If the project does not build on the first
    checkout, please inform the instructor.
-5. You should create the issue for Task 1 and/or for all tasks for the assignment
+4. You should create the issue for Task 1 and/or for all tasks for the assignment
    now before beginning the first task.  On your GitHub account, go to issues,
    and create it/them from the issue templates for the assignment.
 

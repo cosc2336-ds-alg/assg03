@@ -2,13 +2,13 @@
   "tests": [
     {
       "name": "test successfully builds",
-      "setup": "./configure",
+      "setup": "make clean",
       "run": "make",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 40
+      "points": 25
     },
     {
       "name": "task 1 test tostring member method",
@@ -18,7 +18,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 25
     },
     {
       "name": "task 2 test array baded onstructor",
