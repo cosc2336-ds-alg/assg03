@@ -4,7 +4,7 @@
  *   classes and dynamic memory allocation.
  *
  * @author Jane Programmer
- * @note   class: COSC 2336, Summer 2021
+ * @note   class: COSC 2336, Spring 2024
  * @note   ide  : VSCode Server 3.9.3, Gnu Development Tools
  * @note   assg : Assignment Classes and Memory
  * @date   June 1, 2021
