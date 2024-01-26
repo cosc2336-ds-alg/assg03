@@ -18,9 +18,9 @@ date: 'Spring 2024'
 
 # Description
 In C++ the largest int value is $2147483647$.  So, an integer larger
-than this cannot be stored and processed as an integer.  Similarly if
-the sum or product of two positive integers is greater than
-$2147483647$, the result will be incorrect.
+than this cannot be stored and processed as a built in `int` data
+type.  Similarly if the sum or product of two positive integers is
+greater than $2147483647$, the result will be incorrect.
 
 One way to store and manipulate large integers is to store each
 individual digit of the number in an array.  In this assignment, you
@@ -37,7 +37,7 @@ implement several other member functions and constructors, that will
 be useful to implementing addition of the `LargeInteger` values.
 
 In order to support arbitrarily large integers, you will also
-get a chance to practice dynamic memory allocation.  We will be
+get a chance to practice **dynamic memory allocation**.  We will be
 managing a block of memory to hold the digits of the large
 integer, and this block will be able to grow as needed to
 handle any number of digits (that is until we exhaust
@@ -83,9 +83,10 @@ method.  We need this method to perform some of our unit testing
 on the `LargeInteger` class.
 
 This function will return a string representation of the
-`LargeInteger`.  You should use a `<sstream>` output string streams to
-implement this function.  There were some examples of using string
-streams in this weeks lecture videos and materials.
+`LargeInteger`.  You will use the `<sstream>` library to create an
+output string stream `ostringstream`, so that you can stream into and
+return a `string` from this function. There were some examples of
+using string streams in this weeks lecture videos and materials.
 
 Your `LargeInteger` class will have an array of integer values.  This
 array will be stored in the member variable named `digit`.  If you look
@@ -109,7 +110,7 @@ the first digit of our `LargeInteger`, etc.
 
 However, note that the digits of the `LargeInteger` are to be stored
 in reverse of their display order.  That is to say that the 1's place
-(10^0) is in index 0 of `digit[]`, the 10's place (10^1) is in index
+($10^0$) is in index 0 of `digit[]`, the 10's place ($10^1$) is in index
 1, etc.  So to be clear, if we are representing the integer value
 $487$ in our `LargeInteger`, we should end up with
 
@@ -134,7 +135,7 @@ Your `tostring()` is a member method of the `LargeInteger` class.
 So don't forget when you add the method to the implementation file, you
 will need to indicate that the method is a member of the
 `LargeInteger` class.  The `tostring()` member function does not take
-any input, and it should return a `C++` string as its result.
+any input, and it should return a C++ `string` as its result.
 Also you should be aware that the `tostring()` method does not modify
 the value of the `LargeInteger` if it is called.  Thus it is
 an accessor method that simply returns information about the `LargeInteger`.
@@ -322,7 +323,7 @@ digit[2] = 3  // the 10^2 or 100's digit
 ```
 
 we could ask this function for example "what is the
-digit at position 2 (the 10^2 digit)" and it should
+digit at position 2 (the $10^2$ digit)" and it should
 return an answer of `3` because we have 3 100's
 in the $10^2$ place.
 

@@ -11,11 +11,11 @@ assignees: ''
 
 The second task is to add another class constructor to the `LargeInteger` class.  There are two existing constructors you should examine and understand, they will be useful as models for the constructor you need to create.
 
-This constructor needs to create a `LargeInteger` instance from an existing array of digits.  This method will allow you to practice performing dynamic memory allocation and working with pointers.  You need to dynamically a new array of `int` values in this method to copy the digits from the given array into the `LargeInteger` instance being constructed.
+This constructor needs to create a `LargeInteger` instance from an existing array of digits.  This method will allow you to practice performing dynamic memory allocation and working with pointers.  You need to dynamically allocate a new array of `int` values in this method to copy the digits from the given array into the `LargeInteger` instance being constructed.
 
 **Suggested Solution**
 
-This method is similar to the provided constructor that constructs the digits by parsing an `int` data type.  You should examine that method for an idea of how to implement your constructor.
+This method is similar to (but easier than) the provided constructor that constructs the digits by parsing an `int` data type.  You should examine that method for an idea of how to implement your constructor.
 
 **Additional Requirements**
 

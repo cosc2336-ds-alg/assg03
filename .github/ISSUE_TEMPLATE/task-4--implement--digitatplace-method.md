@@ -19,5 +19,5 @@ This function needs to be safe from making an illegal array bounds reference.  T
 **Additional Requirements**
 
 - This member method does not modify the instance, so it needs to be declared as a `const` member method.
-- It is required that your method returns 0 for request that is greather than the biggest most significant digit, or that are less than 0.
+- It is required that your method returns 0 for either a request for a digit greater than the number of digits, or for a requrest for a negative digit index (less than 0).
 

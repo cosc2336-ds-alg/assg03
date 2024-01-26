@@ -59,7 +59,7 @@ private:
   ///   holds the digits of the large integer this object represents.  The
   ///   digits in the array are orderd such that the 1's place (10^0) is in
   ///   index 0 of the array, the 10's place (10^1) is in the index 1, and so
-  ///    on.
+  ///   on.
   int* digit;
 };
 
